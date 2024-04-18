@@ -15,10 +15,12 @@ int main(void) {
 	double a = 3.0;
 	float b = 4.0f;
 	int c = 5;
+	int d = 6;
 
 	cout << half(a) << endl;
 	cout << half(b) << endl;
 	cout << half(c) << endl;
+	cout << half(d) << endl;
 }
 
 //Templated function
@@ -27,6 +29,7 @@ T half(T num) {
 	return num / 2.0;
 }
 
+//Integer function
 int half(int num) {
 	return round(num / 2.0);
 }
